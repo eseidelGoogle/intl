@@ -15,12 +15,12 @@ test/*: Skip  # raw tests only meant to be run in dartium. Other browsers run
 test/intl_message_basic_example_test: Skip # invalid import under pub's package-layout
 
 [ $compiler == none && ($runtime == drt || $runtime == dartium || $runtime == ContentShellOnAndroid) ]
-test/date_time_format_http_request_test: Skip # Times out flakily. Issue 19544
-test/date_time_format_local_even_test: Skip # Times out flakily. Issue 19544
-test/date_time_format_local_odd_test: Skip # Times out flakily. Issue 19544
-build/test/date_time_format_http_request_test: Skip # Times out flakily. Issue 19544
-build/test/date_time_format_local_even_test: Skip # Times out flakily. Issue 19544
-build/test/date_time_format_local_odd_test: Skip # Times out flakily. Issue 19544
+#test/date_time_format_http_request_test: Skip # Times out flakily. Issue 19544
+#test/date_time_format_local_even_test: Skip # Times out flakily. Issue 19544
+#test/date_time_format_local_odd_test: Skip # Times out flakily. Issue 19544
+#build/test/date_time_format_http_request_test: Skip # Times out flakily. Issue 19544
+#build/test/date_time_format_local_even_test: Skip # Times out flakily. Issue 19544
+#build/test/date_time_format_local_odd_test: Skip # Times out flakily. Issue 19544
 
 [ $runtime == opera && $compiler == dart2js ]
 build/test/find_default_locale_browser_test: Fail
